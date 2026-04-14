@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="dashboard-page" class="page">
+            <header>
+                <h1>Task Manager</h1>
+                <button id="logout-btn">Logout</button>
+            </header>
+            <main>
+                <section class="stats">
+                    <div class="stat-card">
+                        <h3>Total Tasks</h3>
+                        <span id="total-tasks">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completed</h3>
+                        <span id="completed-tasks">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pending</h3>
+                        <span id="pending-tasks">0</span>
+                    </div>
+                </section>
+                <section class="task-form">
+                    <h2>Add New Task</h2>
+                    <form id="add-task-form">
+                        <input type="text" placeholder="Task Title" required>
+                        <textarea placeholder="Description"></textarea>
+                        <button type="submit">Add Task</button>
+                    </form>
+                </section>
+                <section class="task-list">
+                    <h2>My Tasks</h2>
+                    <div id="tasks-container"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
